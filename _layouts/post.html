@@ -22,15 +22,22 @@ layout: default
 </div>
 
 <div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="left arrow">Previous Post</a>
   {% endif %}
-
-  {% if site.disqus.shortname %}
-        {% include disqus.html %}
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="right arrow">Next Post</a>
   {% endif %}
   <a href="#" class="top">Top</a>
+  <hr>
 </div>
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+  {% if page.comments != false %}
+  <div class="pagination">
+    <br>
+    <a href="#" class="top">Top</a>
+    <hr>
+  </div>
+  {% endif %} 
+{% endif %}
