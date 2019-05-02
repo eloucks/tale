@@ -1,20 +1,26 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title: "The Back of My Mind"
+email: "me@ericloucks.com"
+description: "The random blog of Eric Loucks"
+url: "https://blog.ericloucks.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+mainurl: "https://ericloucks.com"
+github_username: "eloucks"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name: Eric Loucks
+  url: https://blog.ericloucks.com
+  email: me@ericloucks.com
+
+disqus:
+  shortname: ericloucks
 
 # Build settings
-markdown:       kramdown
+markdown: kramdown
 include:
   - _pages
 
@@ -32,7 +38,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       10
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
