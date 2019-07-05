@@ -41,4 +41,11 @@ permalink:      /:year-:month-:day/:title
 paginate:       10
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: [ 
+  Gemfile, 
+  Gemfile.lock, 
+  tale.gemspec, 
+  publish.sh,
+  README.md,
+  CODE_OF_CONDUCT.md
+]

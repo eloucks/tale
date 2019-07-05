@@ -20,8 +20,9 @@ layout: default
   <div class="post-line"></div>
   {{ content }}
 </div>
-
 <div class="pagination">
+  Disclaimer: This blog contains only my own opinions, not those of any organizations, corporations, or projects I am affiliated with. Nothing presented here should be taken as advice, and I am not liable for outcomes that could arise if one chooses to do so.
+  <br><br>
   {% if page.previous.url %}
     <a href="{{ page.previous.url | prepend: site.baseurl }}" class="left arrow">Previous Post</a>
   {% endif %}
